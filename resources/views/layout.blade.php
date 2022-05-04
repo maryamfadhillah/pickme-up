@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+        content="Calculating price application using Javascript">
     <meta name="keywords"
-        content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+        content="calculate, price, laravel, javascript">
     <meta name="author" content="elemis">
-    <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
+    <title>Pick Me Up</title>
     <link rel="shortcut icon" href="{{ asset('sandbox/img/favicon.svg') }}">
     <link rel="stylesheet" href="{{ asset('sandbox/css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('sandbox/css/style.css') }}">
