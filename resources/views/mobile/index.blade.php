@@ -13,6 +13,15 @@
                     <input class="form-check-input" type="radio" name="selectedmobile" value="ios" id="selectedMobile" onclick="calculateTotal()">
                     <label class="form-check-label" for="selectedMobile"> Ios </label>
                 </div>
+
+                <div class="form-control">
+                    <label>Design</label>
+                    <select id="design" name="design" onchange="calculateTotal()">
+                        <option value="none" selected>None</option>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
                 </fieldset>
             </form>
         </div>
