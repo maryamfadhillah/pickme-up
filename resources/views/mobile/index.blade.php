@@ -17,7 +17,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="selectedmobile" value="android"
                             id="selectedMobile" onclick="calculateTotal()">
-                        <label class="form-check-label" for="selectedMobile"> Andoroid </label>
+                        <label class="form-check-label" for="selectedMobile"> Android </label>
                     </div>
                     <div class="form-check mb-4">
                         <input class="form-check-input" type="radio" name="selectedmobile" value="ios"
@@ -29,8 +29,7 @@
                 <div class="form-select-wrapper">
                     <label class="py-1"><strong>Design</strong></label>
                     <select class="form-select" id="design" name="design" onchange="calculateTotal()">
-                        <option selected>Choose your design</option>
-                        <option value="none">None</option>
+                        <option value="none" selected>None</option>
                         <option value="basic">Basic</option>
                         <option value="premium">Premium</option>
                     </select>

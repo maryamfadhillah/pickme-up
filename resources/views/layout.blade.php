@@ -25,6 +25,7 @@
     <script src="{{ asset('sandbox/js/plugins.js') }}"></script>
     <script src="{{ asset('sandbox/js/theme.js') }}"></script>
     <script src="{{ asset('sandbox/js/calculate.js') }}"></script>
+    <script src="{{ asset('sandbox/js/cake.js') }}"></script>
 </body>
 
 </html>

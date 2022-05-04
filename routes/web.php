@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/mobile', function () {
     return view('mobile.index');
 });
+
+Route::get('/cake', function () {
+    return view('cake.index');
+});
