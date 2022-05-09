@@ -16,10 +16,11 @@ topping_type["none"] = "../../img/topping/plain.png";
 topping_type["cream"] = "../../img/topping/cream.png";
 topping_type["strawberry"] = "../../img/topping/strawberry.png";
 
+var theForm = document.forms["cakeform"];
+
 function getCakePrice()
 {
     var cakePrice = 0;
-    var theForm = document.forms["cakeform"];
     var selectedCake = theForm.elements["selectedCake"];
 
     for(var i = 0; i < selectedCake.length; i++)
@@ -36,7 +37,6 @@ function getCakePrice()
 function getToppingPrice()
 {
     var toppingPrice = 0;
-    var theForm = document.forms["cakeform"];
     var selectedTopping = theForm.elements["topping"];
 
     toppingPrice = topping_prices[selectedTopping.value];

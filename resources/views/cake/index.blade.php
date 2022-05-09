@@ -15,14 +15,14 @@
                 <div class="form-group">
                     <label class="py-1"><strong>Choose your Cake</strong></label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="selectedCake" value="redvelvet"
+                        <input class="form-check-input" type="radio" id="redvelvet" name="selectedCake" value="redvelvet"
                             id="selectedCake" onclick="calculateCake()">
-                        <label class="form-check-label" for="selectedCake"> Red Velved </label>
+                        <label class="form-check-label" for="redvelvet"> Red Velved </label>
                     </div>
                     <div class="form-check mb-4">
-                        <input class="form-check-input" type="radio" name="selectedCake" value="blackforest"
+                        <input class="form-check-input" type="radio" id="blackforest" name="selectedCake" value="blackforest"
                             id="selectedCake" onclick="calculateCake()">
-                        <label class="form-check-label" for="selectedCake"> Black Forest </label>
+                        <label class="form-check-label" for="blackforest"> Black Forest </label>
                     </div>
                 </div>
 
