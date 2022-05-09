@@ -26,6 +26,20 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label class="py-1"><strong>Pick your features</strong></label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="addgame" name="addgame"
+                            onclick="calculateTotal()" />
+                        <label class="form-check-label" for="addgame">Drag and Drop Games</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="addvideo" name="addvideo"
+                            onclick="calculateTotal()" />
+                        <label class="form-check-label" for="addvideo">Video Player</label>
+                    </div>
+                </div>
+
                 <div class="form-select-wrapper">
                     <label class="py-1"><strong>Design</strong></label>
                     <select class="form-select" id="design" name="design" onchange="calculateTotal()">

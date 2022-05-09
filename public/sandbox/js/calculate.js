@@ -7,10 +7,11 @@ design_prices["none"] = 0;
 design_prices["basic"] = 200;
 design_prices["premium"] = 500;
 
+var theForm = document.forms["mobileform"];
+
 function getMobilePrice()
 {
     var mobilePrice = 0;
-    var theForm = document.forms["mobileform"];
     var selectedMobile = theForm.elements["selectedmobile"];
 
     for(var i = 0; i < selectedMobile.length; i++)
@@ -24,10 +25,33 @@ function getMobilePrice()
     return mobilePrice;
 }
 
+function gamePrice()
+{
+    var gamePrice = 0;
+    var addGame = theForm.elements["addgame"];
+
+    if(addGame.checked==true)
+    {
+        gamePrice=700;
+    }
+    return gamePrice;
+}
+
+function videoPrice()
+{
+    var videoPrice = 0;
+    var addVideo = theForm.elements["addvideo"];
+
+    if(addVideo.checked==true)
+    {
+        videoPrice=300;
+    }
+    return videoPrice;
+}
+
 function getDesignPrice()
 {
     var designPrice = 0;
-    var theForm = document.forms["mobileform"];
     var selectedDesign = theForm.elements["design"];
 
     designPrice = design_prices[selectedDesign.value];
@@ -36,7 +60,7 @@ function getDesignPrice()
 
 function calculateTotal()
 {
-    var systemPrice = getMobilePrice() + getDesignPrice() + 500;
+    var systemPrice = getMobilePrice() + getDesignPrice() + gamePrice() + videoPrice() + 500;
 
     //display
     var divobj = document.getElementById('totalPrice');
