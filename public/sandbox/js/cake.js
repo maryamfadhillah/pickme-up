@@ -16,12 +16,12 @@ topping_type["none"] = "../../img/topping/plain.png";
 topping_type["cream"] = "../../img/topping/cream.png";
 topping_type["strawberry"] = "../../img/topping/strawberry.png";
 
-var theForm = document.forms["cakeform"];
+let cakeForm = document.forms["cakeform"];
 
 function getCakePrice()
 {
     var cakePrice = 0;
-    var selectedCake = theForm.elements["selectedCake"];
+    var selectedCake = cakeForm.elements["selectedCake"];
 
     for(var i = 0; i < selectedCake.length; i++)
     {
@@ -37,7 +37,7 @@ function getCakePrice()
 function getToppingPrice()
 {
     var toppingPrice = 0;
-    var selectedTopping = theForm.elements["topping"];
+    var selectedTopping = cakeForm.elements["topping"];
 
     toppingPrice = topping_prices[selectedTopping.value];
     return toppingPrice;
@@ -53,14 +53,14 @@ function calculateCake()
     divobj.innerHTML = "Total Price For your cake : Rp. "+systemPrice;
 
     //display cake
-    var theForm = document.forms["cakeform"];
-    var selectedCake = theForm.elements["selectedCake"];
+    var cakeForm = document.forms["cakeform"];
+    var selectedCake = cakeForm.elements["selectedCake"];
     var value = cake_type[selectedCake.value];
     document.getElementById('previewCake').src=value;
 
     //display topping cake
-    var theForm = document.forms["cakeform"];
-    var selectedTopping = theForm.elements["topping"];
+    var cakeForm = document.forms["cakeform"];
+    var selectedTopping = cakeForm.elements["topping"];
     var value = topping_type[selectedTopping.value];
     document.getElementById('previewTopping').src=value;
 }

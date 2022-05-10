@@ -7,12 +7,12 @@ design_prices["none"] = 0;
 design_prices["basic"] = 200;
 design_prices["premium"] = 500;
 
-var theForm = document.forms["mobileform"];
+let mobileForm = document.forms["mobileform"];
 
 function getMobilePrice()
 {
     var mobilePrice = 0;
-    var selectedMobile = theForm.elements["selectedmobile"];
+    var selectedMobile = mobileForm.elements["selectedmobile"];
 
     for(var i = 0; i < selectedMobile.length; i++)
     {
@@ -28,7 +28,7 @@ function getMobilePrice()
 function gamePrice()
 {
     var gamePrice = 0;
-    var addGame = theForm.elements["addgame"];
+    var addGame = mobileForm.elements["addgame"];
 
     if(addGame.checked==true)
     {
@@ -40,7 +40,7 @@ function gamePrice()
 function videoPrice()
 {
     var videoPrice = 0;
-    var addVideo = theForm.elements["addvideo"];
+    var addVideo = mobileForm.elements["addvideo"];
 
     if(addVideo.checked==true)
     {
@@ -52,7 +52,7 @@ function videoPrice()
 function getDesignPrice()
 {
     var designPrice = 0;
-    var selectedDesign = theForm.elements["design"];
+    var selectedDesign = mobileForm.elements["design"];
 
     designPrice = design_prices[selectedDesign.value];
     return designPrice;
